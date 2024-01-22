@@ -266,7 +266,7 @@ button {
     
     .us .first-column .orange-line {margin: auto;}
 
-    .us .second-column {margin-top: 0; margin-bottom: 60px;}
+    .us .second-column {margin-top: 0; margin-bottom: 60px; justify-content: center;}
 }
 
 /* us */
