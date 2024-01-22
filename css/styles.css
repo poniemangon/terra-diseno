@@ -260,8 +260,11 @@ button {
     .us .container {
         flex-direction: column;
         align-items: center;
+
     }
-    .us .first-column {width: 80%;}
+    .us .first-column {width: 100%; text-align: center;}
+    
+    .us .first-column .orange-line {margin: auto;}
 
     .us .second-column {margin-top: 0; margin-bottom: 60px;}
 }
