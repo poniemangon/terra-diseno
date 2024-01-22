@@ -246,7 +246,7 @@ button {
 
 .us .first-column {width: 50%; margin: 60px 0;}
 
-.us .first-column p {margin-top: 35px;}
+.us .first-column p {margin-top: 35px; line-height: 1.5;}
 
 .us h3 {font-size: 50px;}
 
@@ -395,7 +395,7 @@ button {
     }
 
     .footer .column {
-        width: 80%;
+        width: 100%;
     }
 
     .footer img {
