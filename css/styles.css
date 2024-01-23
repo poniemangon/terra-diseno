@@ -40,6 +40,22 @@ p {font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;  color:
 
 a { text-decoration: none; transition: all 0.6s; color: var(--secondary);}
 
+button {
+    background-color: var(--primary); color: var(--white); display: table; border: 0px; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 15px;padding: 20px 40px;
+}
+
+@media (max-width: 980px){
+    button {padding: 15px 30px;}
+}
+
+@media (max-width: 1360px){
+    h1 {font-size: 55px;}
+    h2{font-size: 37px;}
+    h3{font-size: 30px;}
+    h4{font-size: 16px;}
+    a,  span, textarea, li, input, button, p {font-size: 15px;}
+    
+}
 
 
 .light{font-weight: 300;}
@@ -66,15 +82,9 @@ a { text-decoration: none; transition: all 0.6s; color: var(--secondary);}
 
 .margin-auto {margin: auto;}
 
-button {
-    background-color: var(--primary); 
-    color: var(--white); 
-    display: table; border: 
-    0px; font-family: 'Roboto', sans-serif; 
-    font-weight: 500; 
-    font-size: 15px;
-    padding: 20px 40px;
-}
+
+
+button:hover {background-color: #ffa347 ; transition: all 0.6s;}
 
 .orange-line {border-bottom: 3px solid var(--primary); width: 60px;  margin-top: 10px}
 
@@ -98,7 +108,7 @@ button {
 
 .header img {height: 50px; }
 
-.header a {font-size: 16px;}
+
 
 .header li {cursor: pointer;}
 
@@ -129,7 +139,7 @@ button {
 
     .header img {height: 50px; }
 
-    .header a {font-size: 15px;}
+
 
     .header-mobile ul {
         display: flex;
@@ -163,7 +173,7 @@ button {
 
 .banner h1 {text-align: center;}
 
-.banner p {font-size: 45px; text-align: center;}
+.banner h2 {text-align: center; max-width: 640px;}
 
 
 
@@ -174,17 +184,17 @@ button {
 .banner img {min-height: 673px; object-fit: cover; width: 100%; max-height: 800px;}
 
 @media (max-width: 980px) {
-    .banner p {font-size: 25px; text-align: center;}
-
-    .banner h1 {font-size: 45px;}
 
     .banner img {min-height: 430px; object-fit: cover; width: 100%; max-height: 500px;}
+
+    .banner h2 {font-size: 30px;}
 
     button {
         display: table; border: 0px; font-family: 'Roboto', sans-serif; 
         font-weight: 500; 
-        font-size: 12px;
-        padding: 15px px;
+        font-size: 15px;
+        margin-top: 0px;
+        
     }
 }
 
@@ -192,9 +202,11 @@ button {
 
 /* services-title desktop */
 
+.services-title {background-color: #f2f2f2;}
+
 .services-title h2, h4 {margin: auto; text-align: center;}
 
-.services-title .first-row {margin: 60px 0;}
+.services-title .first-row {padding: 60px 0;}
 
 .services-title h4 {margin-top: 20px; max-width: 550px;}
 
@@ -285,7 +297,6 @@ button {
 @media (max-width: 980px) {
     .banner2 .text-logo img {width: 200px}
     .banner2 img.background {height: 300px; object-fit: cover;}
-    .banner2 h3 {font-size: 20px;}
 }
 
 
@@ -295,7 +306,7 @@ button {
 /* clients */
 
 
-.clients .container { margin-top: 60px; }
+.clients .container { padding-top: 80px ; padding-bottom: 90px ; }
 
 .clients h2 {text-align: center}
 
@@ -303,7 +314,7 @@ button {
 
 .clients div {margin: auto;}
 
-.clients .second-row {margin: 80px 0;}
+.clients .second-row {padding-top: 40px ;}
 
 .clients .second-row img {max-height: 35px; width: auto;}
 
@@ -316,7 +327,7 @@ button {
 @media (max-width: 1300px){
     .clients .container .second-row {display: none;}
 
-    .clients .carousel {display: block; margin: 60px 0;}
+    .clients .carousel {display: block; margin-top: 60px;}
     .owl-carousel {max-width: 600px;}
     .owl-carousel .owl-stage {display: flex; align-items: center;}
 
@@ -361,7 +372,7 @@ button {
 
 .footer img {height: 50px; margin-bottom: 20px;}
 
-.footer p, .footer a, .footer li {color: var(--white);}
+.footer p, .footer a, .footer li, .footer a {color: var(--white); font-weight: 300;}
 
 .footer a:hover {color: var(--primary);}
 
@@ -373,7 +384,9 @@ button {
 
 .footer .underline {border-bottom: 1px solid rgb(88, 88, 88); margin-bottom: 8px; padding-bottom: 16px;}
 
-.footer i {color: var(--white);}
+.footer i {color: var(--white); font-size: 18px;}
+
+.footer i:hover {color: var(--primary); transition: all 0.6s;} 
 
 .footer .orange-footer {
     background-color: var(--primary);
@@ -384,6 +397,11 @@ button {
     margin: auto;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer .orange-footer a:hover {
+    transition: none;
+    color: var(--white);
 }
 
 @media (max-width: 1200px){
@@ -405,12 +423,7 @@ button {
 
 }
 
-@media (max-width: 650px) {
-    
-    .footer .orange-footer p {
-        font-size: 9px;
-    }
-}
+
 
 /* footer */
 
